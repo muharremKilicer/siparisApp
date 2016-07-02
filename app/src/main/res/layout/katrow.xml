@@ -21,7 +21,7 @@
                 android:id="@+id/txtCatName"
                 android:padding="10dp"
                 android:textSize="20dp"
-                android:textColor="#181818" />
+                android:textColor="#ffffff" />
 
 
 

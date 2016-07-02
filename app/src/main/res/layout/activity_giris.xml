@@ -7,9 +7,12 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.mkatr.siparisapp7.GirisAct">
+    tools:context="com.example.mkatr.siparisapp7.GirisAct"
+    android:background="#212126">
     <EditText
         android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:textColorHint="#FFFFFF"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
@@ -18,19 +21,25 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:hint="txtUserMail"
-        android:text="aaa@a.ccc" />
+        android:text="aaa@a.ccc"
+        android:background="@drawable/border"
+        android:padding="10dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:textColorHint="#FFFFFF"
         android:ems="10"
         android:id="@+id/txtUserPass"
         android:layout_below="@+id/txtUserMail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:hint="txtUserPass"
-        android:text="aaaccc" />
+        android:text="aaaccc"
+        android:background="@drawable/border"
+        android:padding="10dp" />
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -46,16 +55,20 @@
             android:layout_height="wrap_content"
             android:layout_weight=".5"
             android:layout_width="0dip"
-            android:textSize="12sp"
+            android:textSize="17dp"
             android:text="Kayıt Ol"
+            android:textColor="#ffffff"
+            android:background="#7ac6ff"
             android:onClick="kayitSayfasi" />
         <Button
             android:id="@+id/btnGiris"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
+            android:background="#7ac6ff"
             android:layout_width="0dip"
-            android:textSize="12sp"
+            android:textSize="17dp"
             android:text="Giriş Yap"
+            android:textColor="#ffffff"
             android:onClick="fncGiris" />
     </LinearLayout>
 </RelativeLayout>

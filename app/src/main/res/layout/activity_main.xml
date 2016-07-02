@@ -7,19 +7,28 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".KayitAct">
+    tools:context=".KayitAct"
+    android:background="#212126">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtUserName"
-        android:hint="txtUserName" />
+        android:hint="txtUserName"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffff"
+        android:background="@drawable/border"
+        android:padding="10dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txtUserSurname"
         android:hint="txtUserSurname"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#ffffff"
+        android:background="@drawable/border"
+        android:padding="10dp"
         android:layout_below="@+id/txtUserName"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -29,11 +38,15 @@
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
+        android:textColorHint="#FFFFFF"
         android:id="@+id/txtUserPhone"
         android:hint="txtUserPhone"
         android:layout_below="@+id/txtUserSurname"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/border"
+        android:padding="10dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -44,18 +57,25 @@
         android:hint="txtUserMail"
         android:layout_below="@+id/txtUserPhone"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/border"
+        android:padding="10dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
+        android:textColorHint="#FFFFFF"
         android:id="@+id/txtUserPass"
         android:hint="txtUserPass"
         android:layout_below="@+id/txtUserMail"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/border"
+        android:padding="10dp" />
 
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -71,16 +91,20 @@
             android:layout_height="wrap_content"
             android:layout_weight=".5"
             android:layout_width="0dip"
-            android:textSize="12sp"
+            android:textSize="17dp"
             android:text="Giriş Yap"
-            android:onClick="girisSayfasi" />
+            android:onClick="girisSayfasi"
+            android:background="#7ac6ff"
+            android:textColor="#ffffff" />
         <Button
             android:id="@+id/btnKayit"
             android:layout_height="wrap_content"
             android:layout_weight=".5"
             android:layout_width="0dip"
-            android:textSize="12sp"
+            android:textSize="17dp"
             android:text="Kayıt Ol"
-            android:onClick="fncKayit" />
+            android:onClick="fncKayit"
+            android:background="#7ac6ff"
+            android:textColor="#ffffff" />
     </LinearLayout>
 </RelativeLayout>

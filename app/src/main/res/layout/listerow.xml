@@ -37,7 +37,8 @@
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="15dp"
             android:textSize="23dp"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            android:textColor="#ffffff" />
 
         <TextView
             android:layout_width="fill_parent"
@@ -46,7 +47,8 @@
             android:text="Medium Text"
             android:layout_marginLeft="15dp"
             android:textStyle="italic"
-            android:id="@+id/txtYayinTarih" />
+            android:id="@+id/txtYayinTarih"
+            android:textColor="#ffffff" />
 
 
     </LinearLayout>
